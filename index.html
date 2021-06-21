@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <nav class="review-gate-navbar" style="display: none">
+      <button class="review-gate-navbar__btn hide">&#10094;</button>
+      <div class="review-gate-navbar__logo-wrapper">
+        <img class="review-gate-navbar__logo" src="./img/logo.png" alt="logo" />
+      </div>
+    </nav>
+
+    <main>
+      <div id="review-gate">
+        <section class="review-step">
+          <h2 class="review-title">Rate Your Recent Experience</h2>
+          <div id="emoji-ratings-wrapper"></div>
+        </section>
+        <section class="review-step">
+          <h2 class="review-title">Please Leave Us A Review!</h2>
+          <p>
+            We are very happy to hear you had a positive experience with
+            [company]. Please take a second to leave us a review on [platform]
+          </p>
+        </section>
+        <section class="review-step">
+          <h2 class="review-title">Please Leave Us Some Feedback</h2>
+          <p>
+            We are sorry to hear you did not have a 5-star experience. Please
+            take a minute to let us know how we can improve.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- JS Dependencies -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery.emojiRatings.min.js"></script>
+    <script src="./js/review-gate.js"></script>
+
+    <script>
+      var config = {
+        navbarColor: '#0f18e9',
+        review: {
+          label: 'Google',
+          url: 'https://google.com',
+        },
+        onUpdate: function (count) {
+          if (count >= 5) {
+            reviewGate.step(2);
+            //  Add some callback here
+            return;
+          }
+          reviewGate.step(3);
+        },
+      };
+      $(document).ready(function () {
+        reviewGate.init('#emoji-ratings-wrapper', config);
+      });
+    </script>
+  </body>
+</html>
