@@ -1,6 +1,8 @@
 # Review Gate
 
-A simple review gate made with jQuery.
+A lightweight review gate made with jQuery to capture user reviews that are not 5-star quality. This helps businesses collect both negative and positive feedback to better enhance their customer service experience.
+
+The screenshot(s) below use a fake/pseudo company to illustrate the review gate.
 
 ## User Journey
 
