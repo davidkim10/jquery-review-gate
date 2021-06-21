@@ -29,7 +29,11 @@
     <nav class="review-gate-navbar" style="display: none">
       <button class="review-gate-navbar__btn hide">&#10094;</button>
       <div class="review-gate-navbar__logo-wrapper">
-        <img class="review-gate-navbar__logo" src="./img/logo.png" alt="logo" />
+        <img
+          class="review-gate-navbar__logo"
+          src="./img/sample-logo.png"
+          alt="logo"
+        />
       </div>
     </nav>
 
@@ -42,15 +46,20 @@
         <section class="review-step">
           <h2 class="review-title">Please Leave Us A Review!</h2>
           <p>
-            We are very happy to hear you had a positive experience with
-            [company]. Please take a second to leave us a review on [platform]
+            We are very happy to hear you had a positive experience with [ex:
+            "bluetech"]. Please take a second to leave us a review on [review
+            platform]
           </p>
+          <a class="btn leave-review-btn" href="#">Leave Review</a>
         </section>
         <section class="review-step">
           <h2 class="review-title">Please Leave Us Some Feedback</h2>
           <p>
-            We are sorry to hear you did not have a 5-star experience. Please
-            take a minute to let us know how we can improve.
+            We are sorry to hear you did not have a 5-Star experience. Please
+            take a moment to leave us feedback on how we can improve.
+            <br />
+            <br />
+            [Insert Your Feedback Form Here]
           </p>
         </section>
       </div>
@@ -68,10 +77,6 @@
     <script>
       var config = {
         navbarColor: '#0f18e9',
-        review: {
-          label: 'Google',
-          url: 'https://google.com',
-        },
         onUpdate: function (count) {
           if (count >= 5) {
             reviewGate.step(2);

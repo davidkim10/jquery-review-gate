@@ -16,15 +16,34 @@ body {
   display: none !important;
 }
 
+.btn {
+  border-radius: 0.25rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0.7rem rgb(0 0 0 / 20%);
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.leave-review-btn {
+  background-color: #0f18e9;
+  color: #fff;
+  margin-top: 1rem;
+}
+
 .review-gate-navbar {
-  top: 0;
-  background-color: #fff;
-  text-align: center;
-  padding: 0.5rem;
-  position: relative;
-  width: 100%;
   box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 10%), 0px 4px 5px 0px rgb(0 0 0 / 8%),
     0px 1px 10px 0px rgb(0 0 0 / 12%);
+  background-color: #fff;
+  padding: 0.5rem;
+  position: relative;
+  text-align: center;
+  top: 0;
+  width: 100%;
 }
 
 .review-gate-navbar__logo {
@@ -33,17 +52,17 @@ body {
 
 .review-gate-navbar__btn {
   background-color: #fff;
-  border: solid 1px #dfdfdf;
   border-radius: 50%;
-  line-height: 0;
-  text-align: center;
-  height: 28px;
-  width: 28px;
+  border: solid 1px #dfdfdf;
   color: #222;
-  position: absolute;
+  height: 28px;
   left: 1rem;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
   top: 50%;
   transform: translateY(-50%);
+  width: 28px;
 }
 
 .review-gate-navbar__btn:hover {
@@ -53,10 +72,9 @@ body {
 }
 
 #review-gate {
-  text-align: center;
-  padding: 1rem;
-  position: relative;
   min-height: 90vh;
+  position: relative;
+  text-align: center;
 }
 
 #emoji-ratings-wrapper {
@@ -75,15 +93,16 @@ body {
 }
 
 .review-step {
-  width: 100%;
-  max-width: 600px;
-  opacity: 0;
   display: none;
-  transition: 0.5s ease opacity;
-  position: absolute;
   left: 50%;
+  max-width: 700px;
+  opacity: 0;
+  padding: 1rem;
+  position: absolute;
   top: 20%;
   transform: translateX(-50%);
+  transition: 0.5s ease opacity;
+  width: 100%;
 }
 
 .review-step p {
