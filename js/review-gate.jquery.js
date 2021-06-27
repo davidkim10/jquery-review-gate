@@ -5,7 +5,7 @@
       navbarColor: '#fff',
       navBarClassName: 'review-gate-navbar',
       navBarBackBtnClassName: 'review-gate-navbar__btn',
-      enableBackButton: true,
+      enableNavBackBtn: true,
       emojiConfig: {
         emoji: 'star',
         fontSize: 42,
@@ -29,7 +29,7 @@
     var $navbar = $('.' + settings.navBarClassName);
     var $navBarBackBtn = $('.' + settings.navBarBackBtnClassName);
 
-    // -- Utility functions
+    // -- Utility Functions
     var findCurrentStep = function () {
       return $selector.find('.current').attr('data-step');
     };
@@ -49,6 +49,14 @@
       }
     };
 
+    var handleOnStepChange = function (step) {
+      $('.review-step.current').removeClass('current');
+      var target = $($selector).find("[data-step='".concat(step, "']"));
+      target.fadeIn(400);
+      target.addClass('current');
+      updateCurrentStep(step);
+    };
+
     // -- Initialize Functions
 
     var initNavBar = function () {
@@ -56,7 +64,7 @@
       $navbar.css('background-color', settings.navbarColor);
       $navBarBackBtn.addClass('hide');
 
-      if (settings.enableBackButton) {
+      if (settings.enableNavBackBtn) {
         $navBarBackBtn.click(function () {
           methods.step(1);
         });
@@ -100,13 +108,8 @@
         updateCurrentStep();
       },
       step: function (step) {
-        console.log('WORKING', step);
-        $('.review-step.current').removeClass('current');
-        var target = $($selector).find("[data-step='".concat(step, "']"));
-        target.fadeIn(400);
-        target.addClass('current');
-        updateCurrentStep(step);
-        !!window.reviewGateSettings.enableBackButton &&
+        handleOnStepChange(step);
+        !!window.reviewGateSettings.enableNavBackBtn &&
           handleNavBackBtnDisplay(step);
       },
     };
