@@ -6,7 +6,7 @@ The screenshot(s) below use a fake/pseudo company to illustrate the review gate.
 
 ## User Journey
 
-![userjourney](./img/user-journey.png)
+![userjourney](./img/user-journey-flow.png)
 
 ## Screenshots
 
