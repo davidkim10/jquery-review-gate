@@ -27,7 +27,7 @@
     <![endif]-->
 
     <nav class="review-gate-navbar" style="display: none">
-      <button class="review-gate-navbar__btn hide">&#10094;</button>
+      <button class="review-gate-navbar__btn">&#10094;</button>
       <div class="review-gate-navbar__logo-wrapper">
         <img
           class="review-gate-navbar__logo"
@@ -41,7 +41,6 @@
       <div id="review-gate">
         <section class="review-step">
           <h2 class="review-title">Rate Your Recent Experience</h2>
-          <div id="emoji-ratings-wrapper"></div>
         </section>
         <section class="review-step">
           <h2 class="review-title">Please Leave Us A Review!</h2>
@@ -71,23 +70,24 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <script src="./js/jquery.emojiRatings.min.js"></script>
-    <script src="./js/review-gate.js"></script>
+    <!-- <script src="./js/jquery.emojiRatings.min.js"></script> -->
+    <script src="./js/review-gate.jquery.js"></script>
 
     <script>
       var config = {
         navbarColor: '#0f18e9',
         onUpdate: function (count) {
           if (count >= 5) {
-            reviewGate.step(2);
-            //  Add some callback here
-            return;
+            // Do something on good review
+            $('#review-gate').reviewGate('step', 2);
+          } else {
+            // Do something on bad review
+            $('#review-gate').reviewGate('step', 3);
           }
-          reviewGate.step(3);
         },
       };
       $(document).ready(function () {
-        reviewGate.init('#emoji-ratings-wrapper', config);
+        $('#review-gate').reviewGate(config);
       });
     </script>
   </body>
