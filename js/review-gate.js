@@ -1,3 +1,6 @@
+// Alternate method to use review gate
+// Intialize from reviewGate object
+
 var reviewGate = {
   default: {
     navbarColor: '#fff',
