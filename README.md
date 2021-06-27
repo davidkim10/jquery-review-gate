@@ -96,6 +96,16 @@ var defaults = {
 };
 ```
 
+| Property               | Type     |
+| ---------------------- | -------- |
+| stepClassName          | String   |
+| navBarColor            | String   |
+| navBarClassName        | String   |
+| navBarBackBtnClassName | String   |
+| enableNavBackBtn       | Boolean  |
+| emojiConfig            | Object   |
+| onUpdate               | Function |
+
 ## Font Used In Demo
 
 font-family: 'Poppins', sans-serif;
