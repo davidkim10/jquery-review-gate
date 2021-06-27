@@ -102,13 +102,12 @@ font-family: 'Poppins', sans-serif;
 
 **Google Fonts CDN:**
 
-`
-
+```
  <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-`
+```
 
 ## User Journey
 
