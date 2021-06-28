@@ -106,6 +106,15 @@ var defaults = {
 | emojiConfig            | Object   |
 | onUpdate               | Function |
 
+## Use JSDelivr CDN
+
+Use [JSDelivr](https://www.jsdelivr.com/github) CDN links below to upload the JS libraries to your project.
+
+```javascript
+<script src="https://cdn.jsdelivr.net/gh/gellerby/jquery-emoji-ratings@master/dist/jquery.emojiRatings.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/davidkim10/jquery-review-gate@master/js/review-gate.jquery.min.js"></script>
+```
+
 ## Font Used In Demo
 
 font-family: 'Poppins', sans-serif;
