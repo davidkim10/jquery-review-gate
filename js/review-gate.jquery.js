@@ -49,12 +49,15 @@
       }
     };
 
-    var handleOnStepChange = function (step) {
-      $('.review-step.current').removeClass('current');
-      var target = $($selector).find("[data-step='".concat(step, "']"));
-      target.fadeIn(400);
-      target.addClass('current');
-      updateCurrentStep(step);
+    var handleOnStepChange = function (step, callback) {
+      $('.review-step.current').fadeOut(function () {
+        $('.review-step.current').removeClass('current');
+        var target = $($selector).find("[data-step='".concat(step, "']"));
+        target.fadeIn(400);
+        target.addClass('current');
+        updateCurrentStep(step);
+        callback();
+      });
     };
 
     // -- Initialize Functions
@@ -108,9 +111,11 @@
         updateCurrentStep();
       },
       step: function (step) {
-        handleOnStepChange(step);
-        !!window.reviewGateSettings.enableNavBackBtn &&
-          handleNavBackBtnDisplay(step);
+        handleOnStepChange(step, function () {
+          if (window.reviewGateSettings.enableNavBackBtn) {
+            handleNavBackBtnDisplay(step);
+          }
+        });
       },
     };
 
