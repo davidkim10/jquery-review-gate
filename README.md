@@ -106,7 +106,7 @@ var defaults = {
 | emojiConfig            | Object   |
 | onUpdate               | Function |
 
-## JSDelivr CDN
+## JSDelivr - Alternate CDN Installation Method
 
 Use the [JSDelivr](https://www.jsdelivr.com/github) CDN links below to upload the JS libraries to your project.
 
