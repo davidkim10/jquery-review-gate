@@ -108,7 +108,7 @@ var defaults = {
 
 ## NPMJS
 Download the NPM package
-```
+```console
 npm i jquery-review-gate
 ```
 
@@ -116,7 +116,7 @@ npm i jquery-review-gate
 
 Use the [JSDelivr](https://www.jsdelivr.com/github) CDN links below to upload the JS libraries to your project.
 
-```
+```html
 <script src="https://cdn.jsdelivr.net/gh/gellerby/jquery-emoji-ratings@master/dist/jquery.emojiRatings.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/davidkim10/jquery-review-gate@master/js/review-gate.jquery.min.js"></script>
 ```
@@ -127,7 +127,7 @@ font-family: 'Poppins', sans-serif;
 
 **Google Fonts CDN:**
 
-```
+```html
  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 ```
 
