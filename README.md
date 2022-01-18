@@ -106,17 +106,31 @@ var defaults = {
 | emojiConfig            | Object   |
 | onUpdate               | Function |
 
-## NPMJS
+## Installation Methods
+
+### Clone the Repo
+```console
+https://github.com/davidkim10/jquery-review-gate.git
+```
+Load the review gate JS file after jQuery.
+```html
+<!--Example: JS Dependencies -->
+<script src="/path/to/js/jquery.min.js" defer></script>
+<script src="/path/to/js/review-gate.jquery.js" defer></script>
+```
+
+### NPMJS
 Download the NPM package
 ```console
 npm i jquery-review-gate
 ```
 
-## JSDelivr - Alternate CDN Installation Method
+### JSDelivr CDN
 
 Use the [JSDelivr](https://www.jsdelivr.com/github) CDN links below to upload the JS libraries to your project.
 
 ```html
+<!-- Load this after jQuery library -->
 <script src="https://cdn.jsdelivr.net/gh/gellerby/jquery-emoji-ratings@master/dist/jquery.emojiRatings.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/davidkim10/jquery-review-gate@master/js/review-gate.jquery.min.js"></script>
 ```
