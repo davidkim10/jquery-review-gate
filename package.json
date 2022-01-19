@@ -1,8 +1,8 @@
 {
   "name": "jquery-review-gate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight review gate made with jQuery to capture user reviews that are not 5-star quality. This helps businesses collect both negative and positive feedback to better enhance their customer service experience.",
-  "main": "/js/review-gate.jquery.js",
+  "main": "js/review-gate.jquery.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,10 +12,12 @@
   },
   "keywords": [
     "jquery-plugin",
-    "ecosystem:jquery"
+    "ecosystem:jquery",
+    "jquery-review-gate",
+    "jquery-customer-review-gate"
   ],
   "author": "David K",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/davidkim10/jquery-review-gate/issues"
   },
