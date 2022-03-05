@@ -6,7 +6,7 @@ Contracted to consult on digital strategy to help the client build stronger bran
 * **Goal:** Build 5-star reviews across various social profiles and/or review sites, such as: Google My Business, Yelp, Facebook Business, etc.
 * **Friction Point:** Client was hesitant to push reviews to all customers (new or previous) because of possible 1-star reviews
 * **Solution:** Build a review gate to capture bad reviews and promote 5 star reviews to various platforms
-* **Outcome:** 1275% increase of 5-star reviews within 24 months (from 4 to 55). SEO also yielded great results for local searches related to service :)
+* **Outcome:** 1275% increase of 5-star reviews within 12 months (from 4 to 55). SEO also yielded great results for local searches related to service :)
 
 I published this jQuery plugin because to my surprise there were no quick out of the box solutions that were free. I've used this plugin multiple times for many clients across various industries and saw great results. Hope this helps anyone looking to quickly create a marketing review gate. 
 
