@@ -2,7 +2,7 @@
   "name": "jquery-review-gate",
   "version": "1.0.2",
   "description": "A lightweight review gate made with jQuery to capture user reviews that are not 5-star quality. This helps businesses collect both negative and positive feedback to better enhance their customer service experience.",
-  "main": "js/review-gate.jquery.js",
+  "main": "dist/js/review-gate.jquery.js",
   "scripts": {
     "build": "node build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
