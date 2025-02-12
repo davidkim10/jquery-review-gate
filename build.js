@@ -26,7 +26,7 @@ esbuild
 // Build for CSS
 esbuild
   .build({
-    entryPoints: ["src/css/styles.css"],
+    entryPoints: ["src/css/review-gate.css"],
     bundle: false,
     minify: true,
     outfile: "dist/css/review-gate.min.css",
