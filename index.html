@@ -10,12 +10,26 @@
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="dist/css/review-gate.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        background-color: #f8f8f8;
+        color: #222;
+        font-family: "Poppins", sans-serif;
+        font-size: 17px;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
 
   <body>
@@ -70,23 +84,23 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <script src="./js/review-gate.jquery.js"></script>
+    <script src="./dist/js/review-gate.jquery.min.js"></script>
 
     <script>
       var config = {
-        navbarColor: '#0f18e9',
+        navbarColor: "#0f18e9",
         onUpdate: function (count) {
           if (count >= 5) {
             // Do something on good review
-            $('#review-gate').reviewGate('step', 2);
+            $("#review-gate").reviewGate("step", 2);
           } else {
             // Do something on bad review
-            $('#review-gate').reviewGate('step', 3);
+            $("#review-gate").reviewGate("step", 3);
           }
         },
       };
       $(document).ready(function () {
-        $('#review-gate').reviewGate(config);
+        $("#review-gate").reviewGate(config);
       });
     </script>
   </body>
