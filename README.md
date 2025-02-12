@@ -151,12 +151,12 @@ npm i jquery-review-gate
 
 ### JSDelivr CDN
 
-Use the [JSDelivr](https://www.jsdelivr.com/github) CDN links below to upload the JS libraries to your project.
+Use the [JSDelivr](https://www.jsdelivr.com/package/npm/jquery-review-gate?tab=files&path=dist%2Fjs) CDN links below to upload the JS libraries to your project.
 
 ```html
 <!-- Load this after jQuery library -->
-<script src="https://cdn.jsdelivr.net/gh/gellerby/jquery-emoji-ratings@master/dist/jquery.emojiRatings.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/davidkim10/jquery-review-gate@master/js/review-gate.jquery.min.js"></script>
+<!-- Be sure to get the latest version from JSDelivr -->
+<script src="https://cdn.jsdelivr.net/npm/jquery-review-gate@1.0.3/dist/js/review-gate.jquery.min.js"></script>
 ```
 
 ## Font Used In Demo
