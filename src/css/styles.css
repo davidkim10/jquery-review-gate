@@ -64,12 +64,15 @@
 }
 
 #emoji-ratings-wrapper {
-  color: transparent;
   text-shadow: 0 0 0 gold;
 }
 
 #emoji-ratings-wrapper .jqEmoji {
   margin-right: 4px;
+}
+
+#emoji-ratings-wrapper .jqEmoji:hover {
+  cursor: pointer;
 }
 
 .review-step.current {
