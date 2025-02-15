@@ -2,10 +2,6 @@
   display: none !important;
 }
 
-.btn:hover {
-  opacity: 0.9;
-}
-
 .dk-review-gate-wrapper {
   min-height: 100vh;
 }
